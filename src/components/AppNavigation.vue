@@ -11,7 +11,7 @@
         </v-list-tile>
       </v-list>
         </v-navigation-drawer>
-        <v-toolbar flat app color="rgb(0, 0, 0, 0.3)" dark height="100px">
+        <v-toolbar flat app color="#151B26" dark height="100px">
             <v-toolbar-side-icon class="hidden-md-and-up" top="50px"  @click="drawer = !drawer"></v-toolbar-side-icon>
             <v-spacer class="hidden-md-and-up"></v-spacer>
             <router-link to="/">

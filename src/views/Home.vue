@@ -1,6 +1,6 @@
 <template>
     <span>
-        <sponsor-line></sponsor-line>
+
 
         <app-carousel></app-carousel>
 
@@ -9,7 +9,7 @@
 </template>
 
 <script>
-import SponsorLine from '@/components/SponsorLine';
+
 
 import AppCarousel from '@/components/AppCarousel';
 
@@ -17,7 +17,7 @@ import AppCarousel from '@/components/AppCarousel';
 export default {
     name: 'home',
     components: {
-        SponsorLine,
+
 
         AppCarousel
 

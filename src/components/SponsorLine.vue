@@ -1,5 +1,5 @@
 <template>
-  <v-toolbar color="grey darken-4 ">
+  <v-toolbar  color="rgba(255, 0, 0, 0.2)">
     <v-toolbar-items >
       <v-layout >
         <div >
@@ -18,9 +18,20 @@ export default {
     sponsors: [
       {
         img: require("@/assets/pictures/cloudlogo.png"),
-        img: require("@/assets/pictures/cosmoslogo.png")
-      }
+      },
+       {
+        img: require("@/assets/pictures/cloudlogo.png"),
+      },
+       {
+        img: require("@/assets/pictures/cloudlogo.png"),
+      },
     ]
   })
 };
 </script>
+
+
+<style>
+
+</style>
+
