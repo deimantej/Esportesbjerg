@@ -1,47 +1,98 @@
 <template>
-  <v-footer
-    dark
-    height="auto"
-  >
-    <v-card
-      flat
-      tile
-      class="indigo lighten-1 white--text text-xs-center"
-    >
-      <v-card-text>
-        <v-btn
-          v-for="icon in icons"
-          :key="icon"
-          class="mx-3 white--text"
-          icon
-        >
-          <v-icon size="24px">{{ icon }}</v-icon>
-        </v-btn>
-      </v-card-text>
-
-      <v-card-text class="white--text pt-0">
-        Phasellus feugiat arcu sapien, et iaculis ipsum elementum sit amet. Mauris cursus commodo interdum. Praesent ut risus eget metus luctus accumsan id ultrices nunc. Sed at orci sed massa consectetur dignissim a sit amet dui. Duis commodo vitae velit et faucibus. Morbi vehicula lacinia malesuada. Nulla placerat augue vel ipsum ultrices, cursus iaculis dui sollicitudin. Vestibulum eu ipsum vel diam elementum tempor vel ut orci. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
-      </v-card-text>
-
-      <v-divider></v-divider>
-
-      <v-card-text class="white--text">
-        &copy;2018 — <strong>Vuetify</strong>
-      </v-card-text>
-    </v-card>
+  <v-footer dark color="grey darken-4" height="350px">
+    <v-container grid-list-md>
+      <v-layout class="footnav">
+        <v-flex d-inline-flex>
+          <v-flex style="margin-left: 50px;"  width="25vh" >
+            <v-card flat color="transparent">
+              <v-card-title>
+                <h1>Esport Esbjerg</h1>
+              </v-card-title>
+              <v-card-text>
+                <p>
+                  Jack Sparrow
+                  <br>whateveremail@gmail.com
+                  <br>546986554321
+                </p>
+                <p>
+                  Discord
+                  <br>Facebook
+                </p>
+              </v-card-text>
+            </v-card>
+          </v-flex>
+          <v-flex>
+            <v-card flat color="transparent" width="40vh">
+              <v-card-title>
+                <h1>Address</h1>
+              </v-card-title>
+              <v-card-text>
+                <p>
+                  Lalaland
+                  <br>Wonder street
+                  <br>69
+                </p>
+                <p>
+                  Opening hours
+                  <br>Monday - Thursday: 6 pm - 8 pm
+                </p>
+              </v-card-text>
+            </v-card>
+          </v-flex>
+          <v-flex  >
+            <v-card flat color="transparent" >
+              <v-card-title>
+                <h1 >Navigation</h1>
+              </v-card-title>
+              <v-card-text>
+                <ul>
+                  <li class="active">
+                    <a href="">Home</a>
+                  </li>
+                  <li>
+                    <a href="">Gallery</a>
+                  </li>
+                  <li>
+                    <a href="">About</a>
+                  </li>
+                </ul>
+              </v-card-text>
+            </v-card>
+          </v-flex>
+        </v-flex>
+      </v-layout>
+    </v-container>
   </v-footer>
 </template>
 
+
+
 <script>
-  export default {
-    data: () => ({
-      icons: [
-        'fab fa-facebook',
-        'fab fa-twitter',
-        'fab fa-google-plus',
-        'fab fa-linkedin',
-        'fab fa-instagram'
-      ]
-    })
-  }
+export default {};
 </script>
+
+<style>
+
+
+ul{
+    list-style-type: none;
+    float: none;
+    text-align:right;
+
+}
+ul li{
+
+    padding: 15px;
+}
+
+ul li a{
+    
+
+    text-decoration: none;
+    color: #fff;
+    padding: 5px 20px;
+
+    transition: 0.6s ease;
+}
+
+</style>
