@@ -2,13 +2,16 @@
   <v-container fluid ma-0 pa-0 fill-width>
     <v-flex>
       <div>
+        
         <v-carousel>
-          <v-carousel-item v-for="(item,i) in items" :key="i" :src="item.src">
+          
+          <v-carousel-item v-for="(item,i) in items" :key="i" :src="item.src" reverse-transition="fade"
+      transition="fade">
             <v-container fill-height>
               <v-layout align-center>
                 <v-flex>
                   <v-card-actions class="justify-center">
-                    <v-btn round small>Join the community</v-btn>
+                    <v-btn round light color="red white--text">Join the community</v-btn>
                   </v-card-actions>
                 </v-flex>
               </v-layout>
