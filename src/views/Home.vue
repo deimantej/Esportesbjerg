@@ -2,7 +2,7 @@
     <span>
 
 
-        <app-carousel></app-carousel>
+        <home-page></home-page>
 
 
     </span>
@@ -11,7 +11,7 @@
 <script>
 
 
-import AppCarousel from '@/components/AppCarousel';
+import HomePage from '@/components/HomePage';
 
 
 export default {
@@ -19,7 +19,7 @@ export default {
     components: {
 
 
-        AppCarousel
+        HomePage
 
     }
 };
