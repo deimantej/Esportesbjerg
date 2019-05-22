@@ -3,7 +3,7 @@
 
     <v-layout row wrap>
       <v-flex xs12 sm4 text-sm-left class="mb-2">
-        <v-card flat
+        <v-card flat transparent
     class="mx-auto"
     max-width="344"
   >

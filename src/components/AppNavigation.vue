@@ -17,7 +17,7 @@
       <v-spacer class="hidden-md-and-up"></v-spacer>
       <router-link to="/">
         <v-toolbar-title to="/">
-          <img class="logo" height="60px" top="50px" :src="appTitle">
+          <img class="logo" height="100px" top="50px" :src="appTitle">
         </v-toolbar-title>
       </router-link>
       <v-flex class="mygtukai">
@@ -36,7 +36,7 @@ export default {
   name: "AppNavigation",
   data() {
     return {
-      appTitle: require("@/assets/logo.png"),
+      appTitle: require("@/assets/pictures/logo2000x2000.png"),
       drawer: false,
       items: [
         { title: "Home", link: "/" },
