@@ -1,52 +1,37 @@
 <template>
-  <v-container fluid text-xs-center style="max-height: 100vh;">
-    <v-layout justify-center align-center>
-      <div>
-        <v-toolbar flat fixed color="rgba(0, 0, 0, 0.5)" style="z-index:3; top:100px;">
-          <v-toolbar-items class="sponsors">
-            <v-layout>
-              <div class="images">
-                <v-flex mx-4 d-inline-block v-for="(obj,key) in sponsors" :key="key">
-                  <v-img width="15vh" v-bind:src="obj.img"></v-img>
-                </v-flex>
-              </div>
+  <v-container fluid text-xs-center style="max-height: 100vh" id="header-carousel">
+    <div class="images">
+      <v-layout row wrap justify-center>
+        <v-flex class="sponsor_item" xs4 d-flex v-for="(obj,key) in sponsors" :key="key">
+          <v-img v-bind:src="obj.img"></v-img>
+        </v-flex>
+      </v-layout>
+    </div>
+    <v-carousel style="height: 100%">
+      <v-carousel-item
+        v-for="(item, i) in items"
+        :src="item.img"
+        :key="i"
+        reverse-transition="fade"
+        transition="fade"
+      >
+        <v-jumbotron dark>
+          <v-container fill-height>
+            <v-layout align-center>
+              <v-flex>
+                <h3 class="display-3">{{ item.title }}</h3>
+                <a href="www.facebook.com">
+                  <div class="hover-animation">
+                    <img src="https://i.imgur.com/nqlLeBo.png" alt class="img-front">
+                    <img src="https://i.imgur.com/uR9xKZt.png" alt class="img-front">
+                  </div>
+                </a>
+              </v-flex>
             </v-layout>
-          </v-toolbar-items>
-        </v-toolbar>
-      </div>
-
-      <v-flex>
-        <div id="header-carousel">
-          <v-carousel style="height: 100%">
-            <v-carousel-item
-              v-for="(item, i) in items"
-              :src="item.img"
-              :key="i"
-              reverse-transition="fade"
-              transition="fade"
-            >
-              <v-jumbotron dark>
-                <v-container fill-height>
-                  <v-layout align-center>
-                    <v-flex>
-                      <h3 class="display-3">{{ item.title }}</h3>
-                      <a href="www.facebook.com">
-                          <div class="hover-animation">
-                              <img src="https://i.imgur.com/nqlLeBo.png" alt="" class="img-front">
-                              <img src="https://i.imgur.com/uR9xKZt.png" alt="" class="img-front">
-                          </div>
-                          
-                      </a>
-                        
-                    </v-flex>
-                  </v-layout>
-                </v-container>
-              </v-jumbotron>
-            </v-carousel-item>
-          </v-carousel>
-        </div>
-      </v-flex>
-    </v-layout>
+          </v-container>
+        </v-jumbotron>
+      </v-carousel-item>
+    </v-carousel>
   </v-container>
 </template>
 
@@ -95,20 +80,24 @@ export default {
 
 <style scoped>
 .images {
-  display: inline-block;
   opacity: 0.6;
-
+  z-index: 5;
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  width: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.4);
+  padding: 15px;
+}
+.sponsor_item {
+  max-width: 160px;
+  padding: 0 8px;
 }
 
 .container {
   padding: 0;
 }
 .hover-animation {
-
   margin: 10% auto 0;
   color: #fff;
 }
