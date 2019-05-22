@@ -1,11 +1,11 @@
 <template>
-    <v-container grid-list-xs text-xs-center  >
+    <v-container fluid grid-list-xs text-xs-center pa-0  >
         <v-layout row wrap justify-center  >
-            <div> 
-                <h1 class="display-2">Games we play</h1>
+            <div class="title"> 
+                <h1  class="display-2">Games we play</h1>
             </div>
             <v-flex>
-                <div class="container">
+                <div pa-0  ma-0 class="games">
                     <img src="https://i.imgur.com/OXzzGwo.jpg" alt="Snow">
                     <v-flex xs12>
                      <div class="top-left">
@@ -14,18 +14,22 @@
                      </v-flex>
                     <v-btn round outline class="btn yellow--text">Join the community</v-btn>
                 </div>
-                <div class="container" >
+                <div class="games">
                     <img src="https://i.imgur.com/OXzzGwo.jpg" alt="Snow">
+                    <v-flex xs12>
                      <div class="top-left">
-                         <h1 class="yellow--text font-weight-bold" style="font-size: 2.5vw;">Top Left</h1>
+                         <h1 text-xs-left class=" yellow--text font-weight-bold" style="font-size: 2.5vw;">COUNTER STRIKE:GLOBAL OFFENSIVE</h1>
                      </div>
+                     </v-flex>
                     <v-btn round outline class="btn yellow--text">Join the community</v-btn>
                 </div>
-                <div class="container" >
-                    <img src="https://i.imgur.com/OXzzGwo.jpg" alt="Snow" >
+                <div class="games">
+                    <img src="https://i.imgur.com/OXzzGwo.jpg" alt="Snow">
+                    <v-flex xs12>
                      <div class="top-left">
-                         <h1 class="yellow--text font-weight-bold" style="font-size: 2.5vw;">Top Left</h1>
+                         <h1 text-xs-left class=" yellow--text font-weight-bold" style="font-size: 2.5vw;">COUNTER STRIKE:GLOBAL OFFENSIVE</h1>
                      </div>
+                     </v-flex>
                     <v-btn round outline class="btn yellow--text">Join the community</v-btn>
                 </div>
             </v-flex>
@@ -36,19 +40,19 @@
 
 <style>
 
-.container {
+.games {
   position: relative;
   width: 100%;
 }
 
 /* Make the image responsive */
-.container img {
+.games img {
   width: 100%;
   height: auto;
 }
 
 /* Style the button and place it in the middle of the container/image */
-.container .btn {
+.games .btn {
   position: absolute;
   top: 50%;
   left: 80%;
