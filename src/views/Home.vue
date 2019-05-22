@@ -5,6 +5,7 @@
         <home-page></home-page>
 
         <app-info></app-info>
+        <app-games></app-games>
 
 
 
@@ -16,6 +17,7 @@
 
 import HomePage from '@/components/HomePage';
 import AppInfo from '@/components/AppInfo';
+import AppGames from '@/components/AppGames';
 
 
 
@@ -25,8 +27,8 @@ export default {
 
 
         HomePage,
-        AppInfo
-
+        AppInfo,
+        AppGames
     }
 };
 </script>
