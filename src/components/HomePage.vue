@@ -7,7 +7,7 @@
         </v-flex>
       </v-layout>
     </div>
-    <v-carousel style="height: 100%">
+    <v-carousel hide-delimiters hide-controls style="height: 100%">
       <v-carousel-item
         v-for="(item, i) in items"
         :src="item.img"
@@ -15,17 +15,12 @@
         reverse-transition="fade"
         transition="fade"
       >
-        <v-jumbotron dark>
-          <v-container fill-height>
-            <v-layout align-center>
-              <v-flex>
-                <h3 class="display-3">{{ item.title }}</h3>
-                <a href="www.facebook.com">
-                  <div class="hover-animation">
-                    <img src="https://i.imgur.com/nqlLeBo.png" alt class="img-front">
-                    <img src="https://i.imgur.com/uR9xKZt.png" alt class="img-front">
-                  </div>
-                </a>
+        <v-jumbotron dark  >
+          <v-container fill-height >
+            <v-layout row wrap align-center >
+              <v-flex xs12 d-block  >
+                <h3 class="display-1">{{ item.title }}</h3>
+                <v-btn round light class="blue--text" style="min-width:300px; border:2px solid #2196F3 ;" >Become a member</v-btn>
               </v-flex>
             </v-layout>
           </v-container>
@@ -97,16 +92,6 @@ export default {
 .container {
   padding: 0;
 }
-.hover-animation {
-  margin: 10% auto 0;
-  color: #fff;
-}
-.hover-animation img {
-  position: absolute;
-  transition: opacity 1s ease-in-out;
-}
-.hover-animation img.img-front:hover {
-  opacity: 0;
-  cursor: pointer;
-}
+
+
 </style>
