@@ -28,6 +28,7 @@
       </v-carousel-item>
     </v-carousel>
   </v-container>
+
 </template>
 
 

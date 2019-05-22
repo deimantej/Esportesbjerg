@@ -3,6 +3,8 @@
 
 
         <home-page></home-page>
+        <app-info></app-info>
+
 
 
     </span>
@@ -12,6 +14,8 @@
 
 
 import HomePage from '@/components/HomePage';
+import AppInfo from '@/components/AppInfo';
+
 
 
 export default {
@@ -19,7 +23,8 @@ export default {
     components: {
 
 
-        HomePage
+        HomePage,
+        AppInfo
 
     }
 };

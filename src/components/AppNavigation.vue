@@ -20,10 +20,14 @@
           <img class="logo" height="60px" top="50px" :src="appTitle">
         </v-toolbar-title>
       </router-link>
-      <div class="mygtukai">
-        <v-btn flat class="hidden-sm-and-down" top="50px" to="/work">Work</v-btn>
-        <v-btn flat class="hidden-sm-and-down" top="50px" to="/about">About</v-btn>
-      </div>
+      <v-flex class="mygtukai">
+        <v-btn flat class="hidden-sm-and-down" top="50px" to="/work">Home</v-btn>
+        <v-btn flat class="hidden-sm-and-down" top="50px" to="/about">Games</v-btn>
+        <v-btn flat class="hidden-sm-and-down" top="50px" to="/about">Events</v-btn>
+        <v-btn flat class="hidden-sm-and-down" top="50px" to="/about">Gallery</v-btn>
+        <v-btn flat class="hidden-sm-and-down" top="50px" to="/about">What is esports</v-btn>
+        <v-btn flat class="hidden-sm-and-down yellow--text" top="50px" to="/about">Join</v-btn>
+      </v-flex>
     </v-toolbar>
   </span>
 </template>
