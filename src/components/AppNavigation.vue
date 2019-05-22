@@ -17,7 +17,7 @@
       <v-spacer class="hidden-md-and-up"></v-spacer>
       <router-link to="/">
         <v-toolbar-title to="/">
-          <img class="logo" height="100px" top="50px" :src="appTitle">
+          <img class="logo" height="130px" top="50px" :src="appTitle">
         </v-toolbar-title>
       </router-link>
       <v-flex class="mygtukai">
@@ -26,7 +26,7 @@
         <v-btn flat class="hidden-sm-and-down" top="50px" to="/about">Events</v-btn>
         <v-btn flat class="hidden-sm-and-down" top="50px" to="/about">Gallery</v-btn>
         <v-btn flat class="hidden-sm-and-down" top="50px" to="/about">What is esports</v-btn>
-        <v-btn flat class="hidden-sm-and-down yellow--text" top="50px" to="/about">Join</v-btn>
+        <v-btn flat class="hidden-sm-and-down yellow--text" top="50px;" to="/about">Join</v-btn>
       </v-flex>
     </v-toolbar>
   </span>

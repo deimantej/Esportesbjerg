@@ -1,11 +1,13 @@
 <template>
-  <v-container grid-list-sm>
+  <v-container fluid grid-list-xs text-xs-center  >
 
-    <v-layout row wrap>
-      <v-flex xs12 sm4 text-sm-left class="mb-2">
-        <v-card flat transparent
-    class="mx-auto"
+    <v-layout row wrap justify-center >
+      
+      <v-flex xs12 sm4 text-sm-left class="pl-5">
+        <v-card flat color="transparent"
+    class="my-5"
     max-width="344"
+    
   >
     <v-card-text>
       <div style="color:#11537C">WHAT IS</div>
@@ -23,10 +25,11 @@ eSport is for everyone, regardless of age, language and wherever you are.
     </v-card-actions>
   </v-card>
       </v-flex>
-      <v-flex xs12 sm4 text-sm-center class="mb-2">
-        <v-card flat
-    class="mx-auto"
+      <v-flex xs12 sm4 text-sm-center class="pl-5">
+        <v-card flat color="transparent"
+    class="my-5"
     max-width="344"
+    
   >
     <v-card-text>
       <div style="color:#11537C">WHO IS</div>
@@ -43,10 +46,11 @@ eSport is for everyone, regardless of age, language and wherever you are.
     </v-card-actions>
   </v-card>
       </v-flex>
-      <v-flex xs12 sm4 text-sm-right class="mb-2">
-        <v-card flat
-    class="mx-auto"
+      <v-flex xs12 sm4 text-sm-right class="pl-5">
+        <v-card flat color="transparent"
+    class="my-5"
     max-width="344"
+    
   >
     <v-card-text>
       <div style="color:#11537C">WHY IS</div>
@@ -65,7 +69,17 @@ Membership within eSport Esbjerg ensures that eSport development in the Esbjerg 
     </v-card-actions>
   </v-card>
       </v-flex>
+
+      <v-flex >
+        <v-btn round light class="blue--text" style="min-width:300px; border:2px solid #2196F3 ;" >Check the gallery</v-btn>
+      </v-flex>
+      
     </v-layout>
 
   </v-container>
 </template>
+
+
+<style>
+
+</style>

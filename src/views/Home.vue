@@ -3,6 +3,7 @@
 
 
         <home-page></home-page>
+
         <app-info></app-info>
 
 
@@ -29,4 +30,11 @@ export default {
     }
 };
 </script>
+
+
+<style>
+
+
+</style>
+
 
