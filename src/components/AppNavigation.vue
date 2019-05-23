@@ -26,6 +26,7 @@
         <v-btn flat class="hidden-sm-and-down" top="50px" to="/about">Events</v-btn>
         <v-btn flat class="hidden-sm-and-down" top="50px" to="/about">Gallery</v-btn>
         <v-btn flat class="hidden-sm-and-down" top="50px" to="/about">What is esports</v-btn>
+        
         <v-btn flat class="hidden-sm-and-down yellow--text" top="50px;" to="/about">Join</v-btn>
       </v-flex>
     </v-toolbar>

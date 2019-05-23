@@ -26,5 +26,14 @@ export default {
 
 
 <style>
+  
+    @font-face {
+        font-family: "dinB";
+        font-family: "dinL";
+        font-family: "delirium";
+        src: url('assets/Fonts/DINPro-CondBold.otf');
+        src: url('assets/Fonts/DINPro-Light.otf');
+        src: url('assets/Fonts/FTY DELIRIUM NCV.ttf')
+    }
 
 </style>

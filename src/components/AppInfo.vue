@@ -18,7 +18,7 @@
         <v-card flat color="transparent" class="my-2">
           <v-card-text>
             <div style="color:#11537C">WHO IS</div>
-            <p class="display-1 text--primary">ESPORT ESBJERG</p>
+            <p class="display-1 text--primary" >ESPORT ESBJERG</p>
 
             <div
               class="text--primary"
@@ -55,4 +55,5 @@
 
 
 <style>
+
 </style>
