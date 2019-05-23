@@ -39,7 +39,7 @@
           </v-card>
         </v-flex>
         <v-flex xs12 sm12 md3>
-          <v-card flat color="transparent" class="last_col">
+          <v-card flat color="transparent" class="last_col text-md-right">
             <v-card-title>
               <h3>Navigation</h3>
             </v-card-title>
@@ -84,12 +84,9 @@ export default {};
   width: 100%;
 }
 
-.last_col ul,
-.last_col h3 {
-  text-align: right;
-}
 .last_col ul {
   list-style-type: none;
+  padding: 0;
 }
 .last_col ul li {
   padding-bottom: 15px;

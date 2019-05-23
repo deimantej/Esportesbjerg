@@ -79,7 +79,7 @@ export default {
 <style scoped>
 .images {
   opacity: 0.6;
-  z-index: 5;
+  z-index: 4;
   position: absolute;
   width: 100%;
   top: 0;
