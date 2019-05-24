@@ -6,6 +6,7 @@
 
         <app-info></app-info>
         <app-games></app-games>
+        <app-gallery></app-gallery>
 
 
 
@@ -18,6 +19,7 @@
 import HomePage from '@/components/HomePage';
 import AppInfo from '@/components/AppInfo';
 import AppGames from '@/components/AppGames';
+import AppGallery from '@/components/AppGallery';
 
 
 
@@ -28,7 +30,8 @@ export default {
 
         HomePage,
         AppInfo,
-        AppGames
+        AppGames,
+        AppGallery
     }
 };
 </script>
