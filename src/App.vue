@@ -28,12 +28,20 @@ export default {
 <style>
   
     @font-face {
-        font-family: "dinB";
-        font-family: "dinL";
-        font-family: "delirium";
+        font-family: 'dinB';
         src: url('assets/Fonts/DINPro-CondBold.otf');
-        src: url('assets/Fonts/DINPro-Light.otf');
+    }
+    @font-face {
+
+        font-family: 'dinL';
+
+        src: url('assets/Fonts/DINPro-CondBold.otf');
+
+    }
+    @font-face {
+
+        font-family: 'delirium';
+
         src: url('assets/Fonts/FTY DELIRIUM NCV.ttf')
     }
-
 </style>
