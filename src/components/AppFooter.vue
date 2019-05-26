@@ -96,7 +96,6 @@ ul li a {
   text-decoration: none;
   color: #fff;
   padding: 5px 20px;
-
   transition: 0.6s ease;
 }
 </style>
