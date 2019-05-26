@@ -3,8 +3,8 @@
     <v-navigation-drawer
       app
       v-model="drawer"
-      class="grey darken-3"
       clipped-right="true"
+      class="purple darken-2"
       dark
       disable-resize-watcher
     >
@@ -20,16 +20,16 @@
       </v-list>
     </v-navigation-drawer>
     <v-toolbar class="navbar" flat app color="#151B26" dark height="70px">
-      <router-link class="logo" to="/">
+      <router-link class="logo" to="/home">
         <v-toolbar-title to="/">
           <img height="130px" :src="appTitle">
         </v-toolbar-title>
       </router-link>
       <v-flex class="mygtukai">
-        <v-btn flat class="hidden-sm-and-down" to="/work">Home</v-btn>
+        <v-btn flat class="hidden-sm-and-down" to="/home">Home</v-btn>
         <v-btn flat class="hidden-sm-and-down" to="/about">Games</v-btn>
         <v-btn flat class="hidden-sm-and-down" to="/about">Events</v-btn>
-        <v-btn flat class="hidden-sm-and-down" to="/about">Gallery</v-btn>
+        <v-btn flat class="hidden-sm-and-down" to="/gallery">Gallery</v-btn>
         <v-btn flat class="hidden-sm-and-down" to="/about">What is esports</v-btn>
       </v-flex>
       <v-spacer class="hidden-sm-and-down"></v-spacer>
@@ -50,7 +50,8 @@ export default {
       items: [
         { title: "Home", link: "/" },
         { title: "Work", link: "/work" },
-        { title: "About", link: "/about" }
+        { title: "About", link: "/about" },
+        { title: "Gallery", link: "/gallery" }
       ]
     };
   },
@@ -65,6 +66,8 @@ export default {
 a {
   color: white;
   text-decoration: none;
+  font-family: 'dinB';
+  font-size: 15px;
 }
 .navbar {
   z-index: 5;
@@ -78,4 +81,6 @@ a {
 .nav_btn {
   justify-self: end;
 }
+
+
 </style>

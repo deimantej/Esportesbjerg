@@ -6,7 +6,8 @@
 
         <app-info></app-info>
         <app-games></app-games>
-        <app-gallery></app-gallery>
+        <social-media></social-media>
+
 
 
 
@@ -19,7 +20,8 @@
 import HomePage from '@/components/HomePage';
 import AppInfo from '@/components/AppInfo';
 import AppGames from '@/components/AppGames';
-import AppGallery from '@/components/AppGallery';
+import SocialMedia from '@/components/SocialMedia';
+
 
 
 
@@ -31,7 +33,8 @@ export default {
         HomePage,
         AppInfo,
         AppGames,
-        AppGallery
+        SocialMedia
+
     }
 };
 </script>

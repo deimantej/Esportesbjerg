@@ -18,12 +18,12 @@
         <v-container fill-height>
           <v-layout row wrap align-center>
             <v-flex xs12 d-block>
-              <h3 class="display-1 white--text">{{ item.title }}</h3>
+              <h3 class="white--text title1" style="font-size:33px;">JOIN OUR COMMUNITY OF PASSIONATE GAMERS <br> AT ESPORT ESBJERG</h3>
               <v-btn
-                round
                 light
-                class="blue--text"
-                style="min-width:300px; border:2px solid #2196F3 ;"
+                color="yellow"
+                class="black--text mainbtn"
+                style="min-width:443px; min-height:61px; font-size:27px"
               >Become a member</v-btn>
             </v-flex>
           </v-layout>
@@ -41,23 +41,19 @@ export default {
       items: [
         {
           img: require("@/assets/pictures/gamer.png"),
-          title: "something",
-          text: " hello world"
+
         },
         {
           img: require("@/assets/pictures/gamer01.jpg"),
-          title: "something",
-          text: " hello world"
+
         },
         {
           img: require("@/assets/pictures/gamer02.jpg"),
-          title: "something",
-          text: " hello world"
+
         },
         {
           img: require("@/assets/pictures/gamer03.jpg"),
-          title: "something",
-          text: " hello world"
+
         }
       ],
       sponsors: [
@@ -67,9 +63,7 @@ export default {
         {
           img: require("@/assets/pictures/cosmoslogo.png")
         },
-        {
-          img: require("@/assets/pictures/cloudlogo.png")
-        }
+
       ]
     };
   }
@@ -94,6 +88,7 @@ export default {
 
 .container {
   padding: 0;
+  font-family: 'dinB';
 }
 
 #header-carousel .fade-enter-active,
@@ -111,4 +106,8 @@ export default {
 #header-carousel .fade-leave-to {
   opacity: 0;
 }
+
+
+
+
 </style>

@@ -1,5 +1,5 @@
 <template>
-  <v-footer class="footer" height="auto" dark color="grey darken-4">
+  <v-footer class="footer" height="auto" dark color="#000000">
     <v-container grid-list-md>
       <v-layout row wrap class="footnav">
         <v-flex xs12 sm6 md4 lg3>

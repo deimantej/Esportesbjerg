@@ -1,6 +1,8 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 import Home from './views/Home.vue'
+import Gallery from './views/Gallery.vue'
+
 
 Vue.use(Router)
 
@@ -9,9 +11,14 @@ export default new Router({
   base: process.env.BASE_URL,
   routes: [
     {
-      path: '/',
+      path: '/home',
       name: 'home',
       component: Home
+    },
+    {
+      path: '/gallery',
+      name: 'gallery',
+      component: Gallery
     },
     {
       path: '/about',
