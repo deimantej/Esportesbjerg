@@ -27,8 +27,8 @@
         >FORUM</v-btn>
       </v-flex>
 
-      <v-flex >
-        <div v-for="(icon,index) in icons" :key="index" target="_blank">
+      <v-flex d-flex justify-center pt-5>
+        <div v-for="(icon,index) in icons" :key="index">
           <a target="_blank" v-bind:href="icon.url">
             <v-img class="media_item" v-bind:src="icon.img"></v-img>
           </a>
@@ -69,7 +69,11 @@ export default {
 
 <style scoped>
 .media_item {
-  height: 100px;
-  width: 100px;
+  margin: 0 auto;
+  height: 80px;
+  width: 80px;
+}
+.media_item:hover {
+  opacity: .7
 }
 </style>
