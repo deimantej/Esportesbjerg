@@ -1,11 +1,11 @@
 <template>
-  <v-container fluid text-xs-center id="header-carousel">
-    <div class="images">
-      <v-layout row wrap justify-center>
-        <v-flex class="sponsor_item" xs4 d-flex v-for="(obj,key) in sponsors" :key="key">
+  <v-container pa-0 fluid text-xs-center id="header-carousel">
+    <div class="logo-images d-flex justify-center">
+      
+        <div class="sponsor_item" v-for="(obj,key) in sponsors" :key="key">
           <v-img v-bind:src="obj.img"></v-img>
-        </v-flex>
-      </v-layout>
+        </div>
+      
     </div>
     <v-carousel hide-delimiters hide-controls>
       <v-carousel-item
@@ -22,8 +22,8 @@
               <v-btn
                 light
                 color="yellow"
+                to="/join"
                 class="black--text mainbtn"
-                style="min-width:443px; min-height:61px; font-size:27px"
               >Become a member</v-btn>
             </v-flex>
           </v-layout>
@@ -69,45 +69,3 @@ export default {
   }
 };
 </script>
-
-<style scoped>
-.images {
-  opacity: 0.6;
-  z-index: 4;
-  position: absolute;
-  width: 100%;
-  top: 0;
-  left: 0;
-  background: rgba(0, 0, 0, 0.4);
-  padding: 15px;
-}
-.sponsor_item {
-  max-width: 160px;
-  padding: 0 8px;
-}
-
-.container {
-  padding: 0;
-  font-family: 'dinB';
-}
-
-#header-carousel .fade-enter-active,
-#header-carousel .fade-leave-active,
-#header-carousel .fade-leave-to {
-  transition: all 0.3s ease-out;
-  position: absolute;
-  top: 0;
-  width: 100%;
-
-  left: 0;
-}
-#header-carousel .fade-enter,
-#header-carousel .fade-leave,
-#header-carousel .fade-leave-to {
-  opacity: 0;
-}
-
-
-
-
-</style>

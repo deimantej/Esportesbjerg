@@ -1,6 +1,6 @@
 <template>
-  <v-footer class="footer" height="auto" dark color="#000000">
-    <v-container grid-list-md>
+  <v-footer class="footer" height="auto" dark>
+    <v-container class="set-max-width" grid-list-md>
       <v-layout row wrap class="footnav">
         <v-flex xs12 sm6 md4 lg3>
           <v-card flat color="transparent">
@@ -27,13 +27,12 @@
             </v-card-title>
             <v-card-text>
               <p>
-                Lalaland
-                <br>Wonder street
-                <br>69
+                Askekrattet 4
+                <br>6705 Esbjerg
               </p>
               <p>
                 Opening hours
-                <br>Monday - Thursday: 6 pm - 8 pm
+                <br>Monday - Thursday: 9 am - 10 pm
               </p>
             </v-card-text>
           </v-card>
@@ -46,13 +45,13 @@
             <v-card-text>
               <ul>
                 <li class="active">
-                  <a href>Home</a>
+                  <a href="/">Home</a>
                 </li>
                 <li>
-                  <a href>Gallery</a>
+                  <a href="/gallery">Gallery</a>
                 </li>
                 <li>
-                  <a href>About</a>
+                  <a href="">Forum</a>
                 </li>
               </ul>
             </v-card-text>
@@ -68,35 +67,3 @@
     </v-container>
   </v-footer>
 </template>
-
-
-
-<script>
-export default {};
-</script>
-
-<style>
-.footer {
-  display: block;
-}
-.footer h3 {
-  font-size: 2rem;
-  width: 100%;
-}
-
-.last_col ul {
-  list-style-type: none;
-  padding: 0;
-}
-.last_col ul li {
-  padding-bottom: 15px;
-}
-
-ul li a {
-  text-decoration: none;
-  color: #fff;
-  padding: 5px 20px;
-
-  transition: 0.6s ease;
-}
-</style>

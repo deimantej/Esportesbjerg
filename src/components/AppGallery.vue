@@ -1,5 +1,6 @@
 <template>
-  <v-container grid-list-md>
+  <v-container my-5 grid-list-md class="set-max-width">
+    <h1>Gallery</h1>
     <v-layout row wrap>
       <v-flex v-for="(obj,key) in images" :key="key" xs6 sm4 md3>
         <v-card flat>
@@ -24,37 +25,37 @@ export default {
     selectedImage: "",
     images: [
       {
-        img: require("@/assets/gallery/Træning ved Cosmos.jpg")
+        img: require("@/assets/gallery/training ved Cosmos.jpg")
       },
       {
-        img: require("@/assets/gallery/Træning ved Cosmos_1.jpg")
+        img: require("@/assets/gallery/training ved Cosmos_1.jpg")
       },
       {
-        img: require("@/assets/gallery/Træning ved Cosmos_2.jpg")
+        img: require("@/assets/gallery/training ved Cosmos_2.jpg")
       },
       {
-        img: require("@/assets/gallery/Træning ved Cosmos_3.jpg")
+        img: require("@/assets/gallery/training ved Cosmos_3.jpg")
       },
       {
-        img: require("@/assets/gallery/Træning ved Cosmos_4.jpg")
+        img: require("@/assets/gallery/training ved Cosmos_4.jpg")
       },
       {
-        img: require("@/assets/gallery/Træning ved Cosmos_5.jpg")
+        img: require("@/assets/gallery/training ved Cosmos_5.jpg")
       },
       {
-        img: require("@/assets/gallery/Træning ved Cosmos_6.jpg")
+        img: require("@/assets/gallery/training ved Cosmos_6.jpg")
       },
       {
-        img: require("@/assets/gallery/Træning ved Cosmos_7.jpg")
+        img: require("@/assets/gallery/training ved Cosmos_7.jpg")
       },
       {
-        img: require("@/assets/gallery/Træning ved Cosmos_8.jpg")
+        img: require("@/assets/gallery/training ved Cosmos_8.jpg")
       },
       {
-        img: require("@/assets/gallery/Træning ved Cosmos_9.jpg")
+        img: require("@/assets/gallery/training ved Cosmos_9.jpg")
       },
       {
-        img: require("@/assets/gallery/Træning ved Cosmos_2.jpg")
+        img: require("@/assets/gallery/training ved Cosmos_2.jpg")
       }
     ]
   }),

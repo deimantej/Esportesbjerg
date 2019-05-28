@@ -1,0 +1,182 @@
+$primary: #11537c;
+$dark: #151b26;
+$light: #f1f0f3;
+
+@font-face {
+  font-family: "dinB";
+  src: url("~@/assets/Fonts/DINPro-CondBold.otf");
+}
+@font-face {
+  font-family: "dinL";
+  src: url("~@/assets/Fonts/DINPro-CondBold.otf");
+}
+@font-face {
+  font-family: "delirium";
+  src: url("~@/assets/Fonts/FTY DELIRIUM NCV.ttf");
+}
+.set-max-width {
+  max-width: 1200px;
+}
+body {
+  font-size: 18px;
+}
+h2 {
+  line-height: 75px;
+  text-align: center;
+  padding-bottom: 10px;
+  small {
+    color: $primary;
+    font-family: "dinB";
+    font-size: 21px;
+    display: block;
+    line-height: 35px;
+  }
+}
+h1,
+h2 {
+  font: normal 89px "delirium";
+  @media only screen and (max-width: 560px) {
+    font-size: 60px;
+    line-height: 60px;
+  }
+}
+h3 {
+  font-family: "dinB";
+  font-size: 30px;
+}
+
+.btn-outline {
+  min-width: 300px;
+}
+.v-btn {
+  font-family: "dinB";
+  font-size: 20px;
+}
+.theme--dark.v-btn.v-btn--disabled:not(.v-btn--icon):not(.v-btn--flat):not(.v-btn--outline) {
+  background: #ddd !important;
+  color: #fff !important;
+}
+.waves {
+  background: url("~@/assets/pictures/waves.png") no-repeat top center;
+  background-size: 100% auto;
+  margin-top: -40px;
+  position: relative;
+  z-index: 2;
+}
+@media only screen and (max-width: 960px) {
+  .waves {
+    background-size: 150% auto;
+  }
+}
+@media only screen and (max-width: 560px) {
+  .waves {
+    background-size: 200% auto;
+  }
+}
+
+.navbar {
+  z-index: 5;
+  .v-btn {
+    font-size: 18px;
+  }
+}
+.logo {
+  align-self: flex-start;
+}
+.nav_btn {
+  justify-self: end;
+}
+.join {
+  justify-self: flex-end;
+  width: auto;
+}
+.side-nav {
+  background-color: #20293a !important;
+  .v-list__tile--link {
+    font-size: 18px !important;
+  }
+}
+
+.games {
+  width: 100%;
+
+  background-size: cover;
+  background-position: center top;
+}
+
+.text1 {
+  font-family: "delirium";
+}
+.v-expansion-panel__header {
+  position: unset;
+}
+
+.media_item {
+  margin: 0 auto;
+  height: 60px;
+  width: 60px;
+}
+.media_item:hover {
+  opacity: 0.7;
+}
+
+.theme--dark.v-footer {
+  background: $dark;
+  display: block;
+  font-size: 16px;
+}
+
+.last_col ul {
+  list-style-type: none;
+  padding: 0;
+}
+.last_col ul li {
+  padding-bottom: 15px;
+}
+
+ul li a {
+  text-decoration: none;
+  color: #fff;
+  padding: 5px 20px;
+
+  transition: 0.6s ease;
+}
+
+.contact-us {
+  background-color: $light;
+}
+.logo-images {
+  opacity: 0.6;
+  z-index: 4;
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.4);
+  padding: 15px;
+}
+.sponsor_item {
+  max-width: 160px;
+  padding: 0 8px;
+}
+
+
+#header-carousel .fade-enter-active,
+#header-carousel .fade-leave-active,
+#header-carousel .fade-leave-to {
+  transition: all 0.3s ease-out;
+  position: absolute;
+  top: 0;
+  width: 100%;
+
+  left: 0;
+}
+#header-carousel .fade-enter,
+#header-carousel .fade-leave,
+#header-carousel .fade-leave-to {
+  opacity: 0;
+}
+.mainbtn{
+  width: 100%;
+  max-width:443px; min-height:61px; font-size:27px;
+}
