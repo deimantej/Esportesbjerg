@@ -11,12 +11,12 @@
             </h2>
             <div
               class="text--primary"
-            >eSport Esbjerg is a public education association whose purpose is to create a gathering for young people, as well as old people who have an interest in gaming. Here you can find people with the same interest within the different games and get the face of the people you play with. This creates an opportunity to be around games, but at the same time get to know new people.</div>
+            >Share your knowledge about gameplay, strategies, features or browse the most popular answers provided by the eSport Esbjerg community. Or simply join the discussion to find friends with the same interest. </div>
           </v-card-text>
         </v-card>
       </v-flex>
       <v-flex xs12>
-        <v-btn depressed outline color="black" class="black--text" to="/gallery">FORUM</v-btn>
+        <v-btn depressed outline color="black" class="black--text" href="https://esportesbjerg.createaforum.com/index.php">FORUM</v-btn>
       </v-flex>
       <v-flex xs12 pt-5 pb-0>
         <h3>OR FIND US HERE</h3>
