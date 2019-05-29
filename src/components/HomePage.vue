@@ -18,7 +18,7 @@
         <v-container fill-height>
           <v-layout row wrap align-center>
             <v-flex xs12 d-block>
-              <h3 class="white--text title1" style="font-size:33px;">JOIN OUR COMMUNITY OF PASSIONATE GAMERS <br> AT ESPORT ESBJERG</h3>
+              <h3 class="white--text title1" style="font-size:34px;">JOIN OUR COMMUNITY OF PASSIONATE GAMERS <br> AT ESPORT ESBJERG</h3>
               <v-btn
                 light
                 color="yellow"

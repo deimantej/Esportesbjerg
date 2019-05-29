@@ -18,7 +18,7 @@ $light: #f1f0f3;
   max-width: 1200px;
 }
 body {
-  font-size: 18px;
+  font-size: 21px;
 }
 h2 {
   line-height: 75px;
@@ -36,13 +36,13 @@ h1,
 h2 {
   font: normal 89px "delirium";
   @media only screen and (max-width: 560px) {
-    font-size: 60px;
+    font-size: 55px;
     line-height: 60px;
   }
 }
 h3 {
   font-family: "dinB";
-  font-size: 30px;
+  font-size: 34px;
 }
 
 .btn-outline {
@@ -50,7 +50,7 @@ h3 {
 }
 .v-btn {
   font-family: "dinB";
-  font-size: 20px;
+  font-size: 21px;
 }
 .theme--dark.v-btn.v-btn--disabled:not(.v-btn--icon):not(.v-btn--flat):not(.v-btn--outline) {
   background: #ddd !important;
@@ -82,7 +82,7 @@ h3 {
 .navbar {
   z-index: 5;
   .v-btn {
-    font-size: 18px;
+    font-size: 21px;
   }
 }
 .logo {
@@ -98,7 +98,7 @@ h3 {
 .side-nav {
   background-color: #20293a !important;
   .v-list__tile--link {
-    font-size: 18px !important;
+    font-size: 21px !important;
   }
 }
 
@@ -128,7 +128,7 @@ h3 {
 .theme--dark.v-footer {
   background: $dark;
   display: block;
-  font-size: 16px;
+  font-size: 13px;
 }
 
 .last_col ul {
