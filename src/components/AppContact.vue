@@ -1,5 +1,5 @@
 <template>
-  <div class="contact-us mt-4 py-5">
+  <div class="contact-us  py-5 waves2">
     <v-form
       action="https://getform.io/f/497cdafe-0c13-447d-b9bd-fe959cd46d06"
       v-model="valid"
@@ -104,3 +104,5 @@ export default {
   }
 };
 </script>
+
+

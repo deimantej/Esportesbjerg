@@ -57,7 +57,14 @@ h3 {
   color: #fff !important;
 }
 .waves {
-  background: url("~@/assets/pictures/waves.png") no-repeat top center;
+  background: url("~@/assets/pictures/waves ideation25.png") no-repeat top center;
+  background-size: 100% auto;
+  margin-top: -40px;
+  position: relative;
+  z-index: 2;
+}
+.waves2{
+  background: url("~@/assets/pictures/waves ideation.png") no-repeat top center;
   background-size: 100% auto;
   margin-top: -40px;
   position: relative;

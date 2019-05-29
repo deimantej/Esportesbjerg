@@ -35,7 +35,7 @@
           <v-card flat color="transparent" class="my-2">
             <v-card-text>
               <h2>
-                <small>WHY IS</small>
+                <small>WHY</small>
                 choose us
               </h2>
 

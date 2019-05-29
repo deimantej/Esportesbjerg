@@ -1,4 +1,5 @@
 <template>
+<div class="waves2">
   <v-container class="set-max-width" grid-list-xs text-xs-center>
     <v-layout row wrap my-5 pt-5 justify-center>
       <v-flex xs12>
@@ -31,6 +32,7 @@
       </v-flex>
     </v-layout>
   </v-container>
+  </div>
 </template>
 
 
@@ -56,3 +58,5 @@ export default {
   }
 };
 </script>
+
+

@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="waves2">
     <v-layout>
       <v-flex text-xs-center xs12 pt-5 pb-3>
         <h2>games we play</h2>
@@ -11,7 +11,7 @@
         <v-container grid-list-xs text-xs-center text-md-left>
           <v-expansion-panel-content pa-0 ma-0 class="transparent">
             <template v-slot:actions>
-              <v-btn outline color="yellow" class="btn">Join the community</v-btn>
+              <v-btn outline color="yellow" class="btn">Read more</v-btn>
             </template>
             <template v-slot:header>
               <span
@@ -34,7 +34,7 @@
         <v-container grid-list-xs text-xs-center text-md-left>
           <v-expansion-panel-content pa-0 ma-0 class="transparent">
             <template v-slot:actions>
-              <v-btn outline color="yellow" class="btn">Join the community</v-btn>
+              <v-btn outline color="yellow" class="btn">Read more</v-btn>
             </template>
             <template v-slot:header>
               <span class="yellow--text text1" style="font-size: 5vw;">fortnite</span>
@@ -54,7 +54,7 @@
         <v-container grid-list-xs text-xs-center text-md-left>
           <v-expansion-panel-content pa-0 ma-0 class="transparent">
             <template v-slot:actions>
-              <v-btn outline color="yellow" class="btn">Join the community</v-btn>
+              <v-btn outline color="yellow" class="btn">Read more</v-btn>
             </template>
             <template v-slot:header>
               <span class="yellow--text text1" style="font-size: 5vw;">Overwatch</span>
@@ -71,3 +71,4 @@
     </div>
   </div>
 </template>
+
