@@ -57,14 +57,14 @@ h3 {
   color: #fff !important;
 }
 .waves {
-  background: url("~@/assets/pictures/waves ideation25.png") no-repeat top center;
+  background: url("~@/assets/pictures/waves.png") no-repeat top center;
   background-size: 100% auto;
   margin-top: -40px;
   position: relative;
   z-index: 2;
 }
-.waves2{
-  background: url("~@/assets/pictures/waves ideation.png") no-repeat top center;
+.bg-gradient {
+  background: url("~@/assets/pictures/bg-gradient.png") repeat-y top center;
   background-size: 100% auto;
   position: relative;
 }
@@ -72,9 +72,15 @@ h3 {
   .waves {
     background-size: 150% auto;
   }
+  .bg-gradient {
+    background-size: 150% auto;
+  }
 }
 @media only screen and (max-width: 560px) {
   .waves {
+    background-size: 200% auto;
+  }
+  .bg-gradient {
     background-size: 200% auto;
   }
 }
@@ -128,7 +134,14 @@ h3 {
 .theme--dark.v-footer {
   background: $dark;
   display: block;
-  font-size: 13px;
+  font-size: 14px;
+  a {
+    color: #fff;
+    text-decoration: none;
+    &:hover {
+      opacity: 0.7;
+    }
+  }
 }
 
 .last_col ul {
@@ -165,7 +178,6 @@ ul li a {
   padding: 0 8px;
 }
 
-
 #header-carousel .fade-enter-active,
 #header-carousel .fade-leave-active,
 #header-carousel .fade-leave-to {
@@ -181,7 +193,12 @@ ul li a {
 #header-carousel .fade-leave-to {
   opacity: 0;
 }
-.mainbtn{
+.mainbtn {
   width: 100%;
-  max-width:443px; min-height:61px; font-size:27px;
+  max-width: 443px;
+  min-height: 61px;
+  font-size: 27px;
+}
+.video-btn {
+  min-height: 61px;
 }

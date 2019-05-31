@@ -1,7 +1,8 @@
 <template>
   <v-form
     v-model="valid"
-    id="joinForm"
+    id="form"
+    ref="form"
     action="https://getform.io/f/497cdafe-0c13-447d-b9bd-fe959cd46d06"
     method="POST"
   >
@@ -97,8 +98,40 @@
             required
           ></v-text-field>
         </v-flex>
-        <v-flex xs12 text-xs-right>
+      </v-layout>
+      <v-layout row wrap>
+        <v-flex xs12 md6>
+          <v-select
+            v-model="game_center"
+            name="game_center"
+            :items="game_centers"
+            label="Select Game Centers"
+          ></v-select>
+        </v-flex>
+        <v-flex xs12 md6>
+          <v-select
+            v-model="trainer"
+            name="trainer"
+            :items="trainers"
+            label="Sign up team training"
+          ></v-select>
+        </v-flex>
+        <v-flex xs12 text-xs-right mb-5>
           <v-btn depressed dark class="yellow--text" :disabled="!valid" @click="submit">Send</v-btn>
+        </v-flex>
+        <v-flex xs12>
+          <v-alert
+            :value="true"
+            color="warning"
+            icon="priority_high"
+            outline
+          >For members under the age of 18, the registration form must be filled by parents or guardians</v-alert>
+        </v-flex>
+        <v-flex xs12 class="subheading" text-xs-center>
+          Payment can be transferred via.
+          <strong>MobilePay</strong> 41999 Or
+          <strong>Bank transfer:</strong> Reg no. 2540 Account no. 4390 462 870
+          <br>The subscription fee has to be paid no later than 14 days after the third trial training.
         </v-flex>
       </v-layout>
     </v-container>
@@ -120,6 +153,14 @@ export default {
     street: "",
     postnr: "",
     city: "",
+    game_center: "",
+    game_centers: ["Cosmos", "Kvaglund"],
+    trainer: "",
+    trainers: [
+      "No Training",
+      "DKK 500 - Twice a week",
+      "DKK 300 - Once a week"
+    ],
     email: "",
     emailRules: [
       v => !!v || "E-mail is required",
@@ -138,7 +179,7 @@ export default {
       this.$refs.menu.save(date);
     },
     submit() {
-      joinForm.submit();
+      this.$refs.form.$el.submit();
     }
   }
 };

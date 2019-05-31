@@ -9,13 +9,17 @@
             </v-card-title>
             <v-card-text>
               <p>
-                Jack Sparrow
-                <br>whateveremail@gmail.com
-                <br>546986554321
+                <a href="mailto:admin@esport-esbjerg.dk">admin@esport-esbjerg.dk</a>
+                <br>
+                <a href="tel:+4531131774">+45 3113 1774</a>
               </p>
               <p>
-                Discord
-                <br>Facebook
+                <a
+                  href="https://discordapp.com/invite/tW6mMUm?fbclid=IwAR19V4tDJQeglcBlO7o-1FI_t1sjit_wbFhBrLaXBt-yXpvRw9T5Gv2XRjo"
+                  target="_blank"
+                >Discord</a>
+                <br>
+                <a href="https://www.facebook.com/eSportEsbjerg" target="_blank">Facebook</a>
               </p>
             </v-card-text>
           </v-card>
@@ -27,8 +31,10 @@
             </v-card-title>
             <v-card-text>
               <p>
-                Askekrattet 4
-                <br>6705 Esbjerg
+                <a href="https://goo.gl/maps/YkfnWxGdMzEN7nLb8" target="_blank">
+                  Askekrattet 4
+                  <br>6705 Esbjerg
+                </a>
               </p>
               <p>
                 Opening hours
@@ -39,7 +45,7 @@
         </v-flex>
         <v-flex xs12 sm12 md3>
           <v-card flat color="transparent" class="last_col text-md-right">
-            <v-card-title>
+            <v-card-title class="d-block">
               <h3>Navigation</h3>
             </v-card-title>
             <v-card-text>
@@ -51,7 +57,7 @@
                   <a href="/gallery">Gallery</a>
                 </li>
                 <li>
-                  <a href="">Forum</a>
+                  <a href="https:/esportesbjerg.createaforum.com/" target="_blank">Forum</a>
                 </li>
               </ul>
             </v-card-text>

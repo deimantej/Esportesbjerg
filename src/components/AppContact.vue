@@ -1,23 +1,23 @@
 <template>
-  <div class="contact-us  py-5 waves2">
+  <div class="py-5">
     <v-form
       action="https://getform.io/f/497cdafe-0c13-447d-b9bd-fe959cd46d06"
       v-model="valid"
       method="POST"
-      id="contactForm"
+      ref="form"
     >
       <v-container class="set-max-width">
         <h2>Contact us</h2>
         <v-layout row wrap>
           <v-flex xs12 md4 text-md-right text-xs-center order-xs1 order-md2>
             <v-list two-line class="transparent">
-              <v-list-tile @click="openLink('tel:+4527153774')">
+              <v-list-tile @click="openLink('tel:+4531131774')">
                 <v-list-tile-action>
                   <v-icon>phone</v-icon>
                 </v-list-tile-action>
 
                 <v-list-tile-content>
-                  <v-list-tile-title>+45 27 15 37 74</v-list-tile-title>
+                  <v-list-tile-title>+45 3113 1774</v-list-tile-title>
                   <v-list-tile-sub-title>Mobile</v-list-tile-sub-title>
                 </v-list-tile-content>
               </v-list-tile>
@@ -67,7 +67,13 @@
               ></v-text-field>
             </v-flex>
             <v-flex xs12>
-              <v-textarea v-model="message" name="Message" label="Message"></v-textarea>
+              <v-textarea
+                v-model="message"
+                name="Message"
+                label="Message"
+                :rules="messageRules"
+                required
+              ></v-textarea>
             </v-flex>
 
             <v-flex xs12 text-xs-right>
@@ -92,14 +98,15 @@ export default {
       v => !!v || "E-mail is required",
       v => /.+@.+/.test(v) || "E-mail must be valid"
     ],
-    message: ""
+    message: "",
+    messageRules: [v => !!v || "Message is required"]
   }),
   methods: {
     openLink(link) {
       window.open(link);
     },
     submit() {
-      contactForm.submit();
+      this.$refs.form.$el.submit();
     }
   }
 };

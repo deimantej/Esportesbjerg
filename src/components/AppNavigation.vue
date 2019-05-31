@@ -17,6 +17,12 @@
         >
           <v-list-tile-content>{{ item.title }}</v-list-tile-content>
         </v-list-tile>
+        <v-list-tile
+          active-class="lighten-2 white--text"
+          @click="openLink('https:/esportesbjerg.createaforum.com/')"
+        >
+          <v-list-tile-content>Forum</v-list-tile-content>
+        </v-list-tile>
       </v-list>
       <div class="text-xs-center">
         <v-btn light color="yellow" class="black--text" to="/join">Join</v-btn>
@@ -29,9 +35,18 @@
         </v-toolbar-title>
       </router-link>
       <v-flex>
-        <v-btn flat v-for="item in items"
+        <v-btn
+          flat
+          v-for="item in items"
           :key="item.title"
-          :to="item.link" class="hidden-sm-and-down" >{{item.title}}</v-btn>
+          :to="item.link"
+          class="hidden-sm-and-down"
+        >{{item.title}}</v-btn>
+        <v-btn
+          flat
+          @click="openLink('https:/esportesbjerg.createaforum.com/')"
+          class="hidden-sm-and-down"
+        >Forum</v-btn>
       </v-flex>
       <v-spacer></v-spacer>
       <v-flex>
@@ -52,14 +67,16 @@ export default {
       drawer: false,
       items: [
         { title: "Home", link: "/" },
-        { title: "Gallery", link: "/gallery" },
-        { title: "Forum", link: "/Forum" }
+        { title: "Gallery", link: "/gallery" }
       ]
     };
   },
   methods: {
     track() {
       this.$ga.page("/");
+    },
+    openLink(link) {
+      window.open(link);
     }
   }
 };
